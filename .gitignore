@@ -1,0 +1,42 @@
+# ── Go ──────────────────────────────
+/bin/
+/dist/
+*.exe
+*.test
+*.out
+coverage.*
+go.work
+go.work.sum
+
+# ── Local env & secrets (NEVER commit) ──
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ── Terraform ───────────────────────
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+!*.tfvars.example
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform.tfstate.lock.info
+*.tfplan
+# NOTE: .terraform.lock.hcl IS committed on purpose (pins provider versions)
+
+# ── Kubernetes ──────────────────────
+kubeconfig*
+
+# ── Editors / OS ────────────────────
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
