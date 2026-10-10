@@ -10,7 +10,7 @@ import (
 	"runtime/debug"
 	"time"
 
-	"github.com/YOUR_GITHUB_USER/achievement-api/internal/logging"
+	"github.com/deviprasadhegde/achievement-api/internal/logging"
 )
 
 // Middleware wraps a handler with extra behaviour that runs before and/or

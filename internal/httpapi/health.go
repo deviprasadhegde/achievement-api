@@ -6,7 +6,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/YOUR_GITHUB_USER/achievement-api/internal/logging"
+	"github.com/deviprasadhegde/achievement-api/internal/logging"
 )
 
 // Check reports whether one dependency is usable. It must respect ctx.

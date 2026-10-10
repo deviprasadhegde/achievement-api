@@ -7,7 +7,7 @@ import (
 	"log/slog"
 	"net/http"
 
-	"github.com/YOUR_GITHUB_USER/achievement-api/internal/config"
+	"github.com/deviprasadhegde/achievement-api/internal/config"
 )
 
 // NewServer builds a fully configured *http.Server.

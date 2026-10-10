@@ -102,12 +102,12 @@ echo "$GH_USER"
 # 2. Create go.mod
 go mod init "github.com/$GH_USER/achievement-api"
 
-# 3. The Go files I provided use the placeholder YOUR_GITHUB_USER in their
+# 3. The Go files I provided use the placeholder deviprasadhegde in their
 #    import paths. Replace it with your username in every .go file:
-grep -rl --include='*.go' 'YOUR_GITHUB_USER' . | xargs sed -i '' "s/YOUR_GITHUB_USER/$GH_USER/g"
+grep -rl --include='*.go' 'deviprasadhegde' . | xargs sed -i '' "s/deviprasadhegde/$GH_USER/g"
 
 # 4. Check nothing is left, then tidy and build
-grep -rn 'YOUR_GITHUB_USER' . --include='*.go' || echo "placeholder replaced ✅"
+grep -rn 'deviprasadhegde' . --include='*.go' || echo "placeholder replaced ✅"
 go mod tidy
 go build ./...
 ```
@@ -334,7 +334,7 @@ git push
 
 | Symptom | Cause | Fix |
 |---|---|---|
-| `package github.com/YOUR_GITHUB_USER/... is not in std` | Placeholder not replaced | Re‑run step 3 (the `sed` line). |
+| `package github.com/deviprasadhegde/... is not in std` | Placeholder not replaced | Re‑run step 3 (the `sed` line). |
 | `main module (…) does not contain package github.com/<other>/...` | go.mod path ≠ import paths | `head -1 go.mod` and imports must match exactly; fix with `sed`. |
 | `sed: 1: "./cmd/...": invalid command code` | GNU‑style `sed -i` on macOS | Use `sed -i ''` exactly as shown. |
 | `fatal: listen on 127.0.0.1:8080: … address already in use` | Another process uses 8080 (often a server you didn't stop) | `lsof -i :8080` → `kill <PID>`, or `make run HTTP_ADDR=127.0.0.1:8081`. |

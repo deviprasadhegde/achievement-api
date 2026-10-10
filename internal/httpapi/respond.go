@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/YOUR_GITHUB_USER/achievement-api/internal/logging"
+	"github.com/deviprasadhegde/achievement-api/internal/logging"
 )
 
 // Every error response in the API has exactly this shape (see

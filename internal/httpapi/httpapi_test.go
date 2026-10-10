@@ -10,7 +10,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/YOUR_GITHUB_USER/achievement-api/internal/config"
+	"github.com/deviprasadhegde/achievement-api/internal/config"
 )
 
 // newTestHandler builds the real server handler with a silent logger.

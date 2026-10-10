@@ -17,9 +17,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/YOUR_GITHUB_USER/achievement-api/internal/config"
-	"github.com/YOUR_GITHUB_USER/achievement-api/internal/httpapi"
-	"github.com/YOUR_GITHUB_USER/achievement-api/internal/logging"
+	"github.com/deviprasadhegde/achievement-api/internal/config"
+	"github.com/deviprasadhegde/achievement-api/internal/httpapi"
+	"github.com/deviprasadhegde/achievement-api/internal/logging"
 )
 
 // version is overwritten at build time:
